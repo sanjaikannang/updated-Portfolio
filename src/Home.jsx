@@ -2,7 +2,6 @@ import React, { useEffect, useRef, useState } from "react";
 import { contactLinks } from "./constants.js";
 import programmingGif from "./assets/Programming.gif";
 import Navbar from "./Navbar";
-import { Link } from "react-router-dom";
 import About from "./About.jsx";
 import Projects from "./Projects.jsx";
 import Contact from "./Contact.jsx";
@@ -83,12 +82,13 @@ const Home = () => {
             </div>
             <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
               <div className="mt-3 sm:mt-0 cursor-pointer w-full md:w-auto">
-              <Link
-                  to="/resume"
+              <a
+              href="https://drive.google.com/file/d/1PdBo22cdFJ2B3Cqsuz-9jzf_0DjYQxtU/view?usp=sharing"
+              target="_blank"
                   className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-500 hover:bg-blue-400 md:py-4 md:text-lg md:px-10 transform transition duration-300 hover:scale-105"
                 >
-                  Resume
-                </Link>
+                  Resume / CV
+                </a>
               </div>
             </div>
           </div>
